@@ -39,7 +39,7 @@
         clouds.mouseMove(window.innerWidth / 2, 5 * window.innerHeight, window.innerWidth, window.innerHeight);
         domElement.classList.add('fadeOut');
         setTimeout(function () {
-            location.href = 'list.html';
+            location.href = 'presentation.html';
         }, 1800);
     });
 
