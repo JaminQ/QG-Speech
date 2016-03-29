@@ -1,4 +1,4 @@
-(function () {
+(function() {
     var move = true,
         domElement = document.createElement('div'),
         clouds = new Clouds(),
@@ -34,11 +34,11 @@
     header.appendChild(topic);
 
     button.innerHTML = 'BEGIN';
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function() {
         move = false;
         clouds.mouseMove(window.innerWidth / 2, 5 * window.innerHeight, window.innerWidth, window.innerHeight);
         domElement.classList.add('fadeOut');
-        setTimeout(function () {
+        setTimeout(function() {
             location.href = 'presentation.html';
         }, 1800);
     });
@@ -58,12 +58,12 @@
     clouds.resize(window.innerWidth, window.innerHeight);
     animate();
 
-    document.addEventListener('mousemove', function (event) {
+    document.addEventListener('mousemove', function(event) {
         if (move) {
             clouds.mouseMove(event.clientX, event.clientY, window.innerWidth, window.innerHeight);
         }
     }, false);
-    window.addEventListener('resize', function (event) {
+    window.addEventListener('resize', function(event) {
         clouds.resize(window.innerWidth, window.innerHeight);
         domElement.style.width = window.innerWidth + 'px';
         domElement.style.height = window.innerHeight + 'px';
