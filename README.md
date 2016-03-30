@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/JaminQ/QG-Speech/master/img/favicon.png" alt="QG Logo" style="width: 200px; text-align: center; margin: 0 auto; display: block;" />
+
 # QG-Speech
 
 * [简介](#简介)
