@@ -1,10 +1,12 @@
 * {
+    font-family: 'arial';
+    font-weight: 100;
+
     margin: 0;
     padding: 0;
+
     border: 0;
     background: none;
-    font-weight: 100;
-    font-family: 'arial';
 }
 
 .wrapper {
@@ -15,6 +17,7 @@
 .wrapper.fadeOut {
     -webkit-animation-name: fadeOut;
     -webkit-animation-duration: 2s;
+
     -webkit-animation-fill-mode: forwards;
 }
 
@@ -32,13 +35,15 @@
         opacity: 1;
     }
     100% {
-        opacity: 0;
         display: none;
+
+        opacity: 0;
     }
 }
 
 .content {
     position: absolute;
+
     width: 100%;
     height: 100%;
 }
@@ -47,36 +52,45 @@
     width: 372px;
     margin: 0 auto;
     padding-top: 60px;
+
     color: white;
-    text-shadow: 0px 0px 5px gray;
+    text-shadow: 0 0 5px gray;
 }
 
 .content header h1 {
     font-size: 130px;
-    letter-spacing: 8px;
+
     margin-right: -4px; /* 消除letter-spacing带来的居中偏移问题 */
+
+    letter-spacing: 8px;
 }
 
 .content header h2 {
-    letter-spacing: 2px;
     margin: 0 -1px 8px 0; /* 消除letter-spacing带来的居中偏移问题 */
+
+    letter-spacing: 2px;
 }
 
 .content header h3 {
     font: 20px 'Microsoft YaHei';
-    letter-spacing: 2px;
+
     margin: 0 -1px 30px 0; /* 消除letter-spacing带来的居中偏移问题 */
+
+    letter-spacing: 2px;
 }
 
 .content button {
+    font-size: 18px;
+
     width: 180px;
     height: 57px;
+
+    cursor: pointer;
+    letter-spacing: 2px;
+
     color: white;
     border: 1px solid rgba(255, 255, 255, .3);
-    cursor: pointer;
     outline: none;
-    font-size: 18px;
-    letter-spacing: 2px;
 }
 
 .content button:hover {
@@ -85,10 +99,13 @@
 }
 
 .content footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
     font-size: 14px;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
     padding: 20px;
+
     color: #666;
 }
