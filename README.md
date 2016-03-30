@@ -1,4 +1,8 @@
-<img src="https://raw.githubusercontent.com/JaminQ/QG-Speech/master/img/favicon.png" alt="QG Logo" style="width: 200px; text-align: center; margin: 0 auto; display: block;" />
+<p align="center">
+  <a href="http://github.com/QGStudio">
+    <img width="150" src="https://raw.githubusercontent.com/JaminQ/QG-Speech/master/img/favicon.png" alt="QG Logo" />
+  </a>
+</p>
 
 # QG-Speech
 
