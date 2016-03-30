@@ -6,7 +6,7 @@
 
 该PPT分为两部分：①首页 ②PPT页
 
-## 目录结构
+## 项目目录结构
 
 ```
 QG-Speech/
@@ -40,7 +40,7 @@ QG-Speech/
 └── README.md
 ```
 
-## 技术引用
+## 三方库引用说明
 
 * 首页使用了`WebGL`技术，引用`ThreeWebGL.js`以及`Tween.js`三方库。
 * PPT页基于`impress.js`三方库。
