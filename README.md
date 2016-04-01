@@ -42,9 +42,10 @@ QG-Speech/
 ├── js/
 │   ├── lib/
 │   │   ├── impress.js
-│   │   ├── ThreeWebGL.js
-│   │   └── Tween.js
+│   │   ├── three.js
+│   │   └── tween.js
 │   ├── bird.js
+│   ├── clouds&boid.js
 │   ├── home.js
 │   └── presentation.js
 ├── index.html
@@ -54,8 +55,8 @@ QG-Speech/
 
 ## 三方库引用说明
 
-* 首页使用了`WebGL`技术，引用`ThreeWebGL.js`以及`Tween.js`三方库。
-* PPT页基于`impress.js`三方库。
+* 首页使用了`WebGL`技术，引用[three.js](http://github.com/mrdoob/three.js)以及[tween.js](http://github.com/sole/tween.js)三方库。
+* PPT页基于[impress.js](http://github.com/bartaz/impress.js)三方库。
 * 其余均**原生**JavaScript方法。
 
 ## 兼容性说明
@@ -66,6 +67,6 @@ QG-Speech/
 
 ## 运行时可能会遇到的跨域问题说明
 
-**问题说明：**由于在`ThreeWebGL.js`文件中使用了Ajax动态引入`bird.js`文件（第535行，`(new THREE.JSONLoaderAjax).load({model:"js/bird.js",callback:a})});`），所以如果直接把`index.html`文件拖动到浏览器下运行的话，会出现跨域问题，主要是由于file协议和http协议之间会造成跨域。
+**问题说明：**由于在`clouds&boid.js`文件中使用了Ajax动态引入`bird.js`文件（第4行，`(new THREE.JSONLoaderAjax).load({model:"js/bird.js",callback:a})});`），所以如果直接把`index.html`文件拖动到浏览器下运行的话，会出现跨域问题，主要是由于file协议和http协议之间会造成跨域。
 
 **解决方案：**在本地起一个服务器（建议使用`node`）或放到网络服务器上并且访问它。

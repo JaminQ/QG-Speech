@@ -1,4 +1,9 @@
 (function() {
+    function animate() {
+        requestAnimationFrame(animate);
+        clouds.update();
+    }
+
     var move = true,
         domElement = document.createElement('div'),
         clouds = new Clouds(),
@@ -68,9 +73,4 @@
         domElement.style.width = window.innerWidth + 'px';
         domElement.style.height = window.innerHeight + 'px';
     }, false);
-
-    function animate() {
-        requestAnimationFrame(animate);
-        clouds.update();
-    }
 })();
