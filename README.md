@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://github.com/QGStudio">
-    <img width="150" src="https://raw.githubusercontent.com/JaminQ/QG-Speech/master/img/favicon.png" alt="QG Logo" />
+    <img width="150" src="https://raw.githubusercontent.com/JaminQ/QG-Speech/master/img/favicon.png" alt="QG Logo" />    
   </a>
 </p>
 
@@ -61,9 +61,17 @@ QG-Speech/
 
 ## 兼容性说明
 
-* 由于准备时间仓促，并且演示当天的设备使用Google Chrome浏览器，因而没有做其它浏览器的兼容测试（所以我也不知道在其它浏览器下会不会出现什么神奇的bug，为保证最佳效果，建议读者在Google Chrome下运行 =_=! ）。
+* 由于准备时间仓促，并且演示当天的设备使用Chrome浏览器，因而没有做其它浏览器的兼容测试（所以我也不知道在其它浏览器下会不会出现什么神奇的bug，为保证最佳效果，建议读者在Chrome浏览器下运行:grin:）。
 * 为了简写代码，CSS3浏览器前缀也只使用了`-webkit-`前缀。
-* `impress.js`的fallback说明也懒得写了。
+* 由于PPT页基于`impress.js`三方库进行开发，因而如果不被支持时会有fallback说明。
+
+## 移动端支持情况说明
+
+由于本来就没有要做移动端支持的打算，所以就顺其自然吧:stuck_out_tongue_closed_eyes:下面说明一下目前已经发现的情况：
+
+* 没有写`viewport`:yum:所以没做移动端分辨率处理。
+* 没有做响应式布局:expressionless:。
+* `impress.js`好像不支持移动端，所以在移动端上运行PPT页时看不到演示效果（不过PPT的内容还是可以看到的:grimacing:）。
 
 ## 运行时可能会遇到的跨域问题说明
 
